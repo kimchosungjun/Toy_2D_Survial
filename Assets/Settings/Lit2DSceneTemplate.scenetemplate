@@ -65,7 +65,23 @@ MonoBehaviour:
     the 2D Renderer in Universal RP.
   preview: {fileID: -3604256930052969394}
   dependencies:
-  - dependency: {fileID: 2800000, guid: b3ab972b21db85d48ade9657efdd4771, type: 3}
+  - dependency: {fileID: 9100000, guid: 9d5bea6d70a2d59429908e29f2d403da, type: 2}
+    instantiationMode: 0
+  - dependency: {fileID: 7400000, guid: 41ecb4ea1c6570f468012d94efe4bafe, type: 2}
+    instantiationMode: 0
+  - dependency: {fileID: 7400000, guid: 5b3f652abcdff6746893514885bd165c, type: 2}
+    instantiationMode: 0
+  - dependency: {fileID: 2800000, guid: 9ee30eb7d2f1f404790266ee96a67099, type: 3}
+    instantiationMode: 0
+  - dependency: {fileID: 7400000, guid: 5da8ab5a7a79a304a940e00de435c61e, type: 2}
+    instantiationMode: 0
+  - dependency: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+    instantiationMode: 0
+  - dependency: {fileID: 2800000, guid: 0d5e657ee5a074e4baa53d5b248a01d2, type: 3}
+    instantiationMode: 0
+  - dependency: {fileID: 2800000, guid: 99a24620d31e5ce4e823c32d11e17c2c, type: 3}
+    instantiationMode: 0
+  - dependency: {fileID: 11400000, guid: a689960881fca7843948244b3ebf663a, type: 2}
     instantiationMode: 1
   templatePipeline: {fileID: 0}
   addToDefaults: 1
