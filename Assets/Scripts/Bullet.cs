@@ -6,9 +6,29 @@ public class Bullet : MonoBehaviour
 {
     public float damage;
     public int per;
-    public void Init(float damage, int per)
+    Rigidbody2D rb;
+    void Awake()
+    {
+        rb = GetComponent<Rigidbody2D>();    
+    }
+    public void Init(float damage, int per, Vector3 dir)
     {
         this.damage = damage;
         this.per = per;
-    } 
+        if (per > -1) // per가 -1이면 무한관통
+        {
+            rb.velocity = dir*15;
+        }
+    }
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (!collision.CompareTag("Enemy") || per==-1)
+            return;
+        per--;
+        if (per == -1)
+        {
+            rb.velocity = Vector2.zero;
+            gameObject.SetActive(false);
+        }
+    }
 }
