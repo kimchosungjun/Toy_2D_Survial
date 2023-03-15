@@ -26,7 +26,7 @@ public class Reposition : MonoBehaviour
             case "Ground":
                 if (diffX > diffY)
                     transform.Translate(Vector3.right * dirX * 40);
-                else
+                else if (diffX<diffY)
                     transform.Translate(Vector3.up * dirY * 40);
                 break;
             case "Enemy":
